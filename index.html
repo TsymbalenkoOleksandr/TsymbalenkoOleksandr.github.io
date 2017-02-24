@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app = "firstMod">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+  <script type="text/javascript" src="libs/angular.min.js"></script>
+  <script type="text/javascript" src="libs/moment.min.js"></script>
+  <script type="text/javascript" src="js/controllers.js"></script>
+  <script type="text/javascript" src="js/directives.js"></script>
+  <script type="text/javascript" src="js/services.js"></script>
+  <script type="text/javascript" src="js/filter.js"></script>
+</head>
+<body>
+  <div class = "admin">
+    <h1>Hello @admin!</h1>
+  </div>
+  <wraper class="main-display">
+  <div ng-repeat="data in main.dataStore[0]">
+  <div ng-controller = "usersField as user" >
+        <user></user>
+    </div>
+  </div>
+  </wraper>
+</body>
+</html>

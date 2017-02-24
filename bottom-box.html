@@ -1,0 +1,10 @@
+<div class="users_box_bottom">
+  <form ng-show="user.tab === 1">
+    <input type="text"name="comment"placeholder="Add a comment" class="bot_text_box" ng-model="user.myValue" />
+    <a href="" class="bot-button-post bot-button-comment--position" ng-click="user.addComment(data)">Post</a>
+  </form> 
+  <form ng-show="user.tab === 2">
+    <div class="bot-button-like"ng-click = "user.addLike(data)" ng-show="!data.metka" onselectstart="return false" onmousedown="return false"> Like </div>
+    <div class="bot-button-like"ng-click = "user.addLike(data)" ng-show="data.metka" onselectstart="return false" onmousedown="return false"> Unlike </div>
+  </form>
+</div>

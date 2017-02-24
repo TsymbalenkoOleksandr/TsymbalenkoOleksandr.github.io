@@ -1,0 +1,47 @@
+<div class="users-box">
+  <div class="main_inform">
+    <div>
+      <img ng-src="{{data.avatar || 'img/noimage.gif'}}" class="users-box__image users-box__image--radius" />
+      <p class="users-box__name">{{data.username}}</p>
+      <p class="users-box__status">{{data.status}}</p>
+    </div>
+  </div>
+  <!-- main field with comments and likes-->
+  <div class="comment_and_likes">
+    <div>
+      <div class="tabs">
+        <div class="comment_and_likes_box" ng-click="user.selectTab(1)" ng-class="{active_comments: user.isSelected(1), disactive: !user.isSelected(1)}">
+          <i class="fa fa-comment-o fa-2x" aria-hidden="true"></i>
+          <span class="comment--margin">COMMENTS</span>
+        </div>
+        <div class="comment_and_likes_box" ng-click="user.selectTab(2)" ng-class="{active_likes: user.isSelected(2), disactive: !user.isSelected(2)}">
+          <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
+          <span class="comment--margin">LIKES</span>
+        </div>
+      </div>
+      <!--main field without user information and tabs-->
+      <div class="main-comments-likes">
+        <!--comments-->
+        <div class="comment-like--border" ng-repeat="comment in data.comments" ng-show="user.tab === 1">
+          <i class="fa fa-bitbucket fa-bitbucket--position fa-2x" aria-hidden="true" ng-click="user.deleteComments($index, data)"></i>
+          <span class = "hours-ago">{{comment.created | filterDate}}</span>
+          <div>
+          <img ng-src="{{comment.avatar || 'img/noimage.gif'}}" class="users-box__image users-box__image--radius main-contents__image--margin" />
+          <p class="ng-main-comments__name" ng-class="{anonim: !comment.username}">{{comment.username || 'Anonimus'}}</p>
+          <p class="ng-main-contents__paragraph">{{comment.text}}</p>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <!--likes-->
+        <div class="comment-like--border" ng-repeat="like in data.likes" ng-show="user.tab === 2">
+          <i class="fa fa-bitbucket fa-2x" aria-hidden="true" ng-click="user.deleteLikes($index, data)"></i>
+          <img ng-src="{{like.avatar || 'img/noimage.gif'}}" class="users-box__image users-box__image--radius main-contents__image--margin" />
+          <p class="ng-main-likes__name">{{like.username}}</p>
+          <div class="clr"></div>
+        </div>
+      </div>
+    </div>
+    <!--bottom of main comments-->
+  </div>
+  <bottom-box></bottom-box>
+</div>
