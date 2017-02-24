@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>shop</title>
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="libs/jquery/jquery-3.1.1.min.js"></script>
+  <link type="text/css" href="libs/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+  <script type="text/javascript" src="libs/jquery-ui/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <!--[if lt IE 9]>
+  <script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <header class="header">
+    <div class="topline">
+      <div class="topline-inner">
+        <div class = "topline-inner-logo">
+          <img src="img/logo.png" alt="logo" />
+        </div>
+        <div class="topline-inner-contacts">
+          <div class = "topline-inner-item">
+            <a href="#"><img src="img/envelope.png" /> norakrass@mail.ru</a>
+          </div>
+          <div class = "topline-inner-item">
+            <a href="#"><img src="img/phone.png" /> +7 905 406 40 46 </a>
+          </div>
+        </div>
+        <div class="topline-inner-control">
+          <div class="topline-inner-item">
+            <a href="#"><div class="fa fa-user"></div> Войти</a>
+          </div>
+          <div class="topline-inner-item">
+            <a href=""><div class="fa fa-shopping-bag"></div> Корзина (0)</a>
+          </div>
+          <div class="topline-inner-item">
+            <div class="fa fa-search"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="poster">
+      <div class="poster-time"></div>
+    </div>
+    <nav class="nav">
+      <div class="icon-menu">
+        <div class="divide"></div>
+        <div class="divide"></div>
+        <div class="divide"></div>
+      </div>
+      <ul>
+        <li class="current"><a href="#">Елочные игрушки</a></li>
+        <li><a href="#">Дизайнерские решения</a></li>
+        <li><a href="#">Корпоративные сувениры</a></li>
+        <li><a href="#">Оптовикам</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="wrapper">
+    <div class="main">
+      <div class="breadcrumbs faded">
+        <a href="#">главная</a> / <a href="#">искусственные ёлки</a>
+      </div>
+      <div class="title">ВАША КОРЗИНА</div>
+      <div class="basket">
+        <div class="basket-header">
+          <div>ТОВАР</div>
+          <div>ОПИСАНИЕ</div>
+          <div>КОЛ-ВО</div>
+          <div>СУММА (руб.)</div>
+          <div>УДАЛИТЬ</div>
+        </div>
+        <div class="basket-item">
+          <div class="basket-item-img">
+            <img src="img/tree.png" alt="tree" />
+          </div>
+          <div class="basket-item-description">
+            <div class="description-information">
+              <div>ЕЛКА ЗЕЛЕНАЯ</div>
+              <span>Арт. 2514/302</span>
+            </div>
+            <input class="spinner faded" name="value" value="1" readonly="readonly" />
+            <div class="basket-description-price faded">9995 руб.</div>
+            <a href="#" class="cansel faded">&#215</a>
+          </div>
+          <div class="basket-item-spinner">
+            <input class="spinner" name="value" value="1" readonly="readonly" />
+          </div>
+          <div class="basket-item-sum">
+            <span>9995</span>
+          </div>
+          <div class="basket-item-cansel">
+            <a href="#" class="cansel">&#215</a>
+          </div>
+        </div>
+        <div class="basket-item">
+          <div class="basket-item-img">
+            <img src="img/white-tree.png" alt="tree" />
+          </div>
+          <div class="basket-item-description">
+            <div class="description-information">
+              <div>ЕЛКА БЕЛАЯ</div>
+              <span>Арт. 8246/044</span>
+            </div>
+            <input class="spinner faded" name="value" value="1" readonly="readonly" />
+            <div class="basket-description-price faded">9995 руб.</div>
+            <a href="#" class="cansel faded">&#215</a>
+          </div>
+          <div class="basket-item-spinner">
+            <input class="spinner" name="value" value="1" readonly="readonly" />
+          </div>
+          <div class="basket-item-sum">
+            <span>9995</span>
+          </div>
+          <div class="basket-item-cansel">
+            <a href="#" class="cansel">&#215</a>
+          </div>
+        </div>
+        <div class="basket-item">
+          <div class="basket-item-img">
+            <img src="img/tree.png" alt="tree" />
+          </div>
+          <div class="basket-item-description">
+            <div class="description-information">
+              <div>ЕЛКА ЗЕЛЕНАЯ</div>
+              <span>Арт. 2514/302</span>
+            </div>
+            <input class="spinner faded" name="value" value="1" readonly="readonly" />
+            <div class="basket-description-price faded">9995 руб.</div>
+            <a href="#" class="cansel faded">&#215</a>
+          </div>
+          <div class="basket-item-spinner">
+            <input class="spinner" name="value" value="1" readonly="readonly" />
+          </div>
+          <div class="basket-item-sum">
+            <span>9995</span>
+          </div>
+          <div class="basket-item-cansel">
+            <a href="#" class="cansel">&#215</a>
+          </div>
+        </div>
+        <div class="basket-footer">
+          <div></div>
+          <div>Итого:  <div id = "total" class="total-number faded">28000</div></div>
+          <div class="total-number">28000</div>
+          <div></div>
+        </div>
+      </div>
+      <div class="continue faded">
+        <a href="#">Продолжить покупки</a>
+      </div>
+      <form action="">
+        <div class="payment">
+          <div class="payment-header">
+            <h2>АДРЕС ДОСТАВКИ</h2>
+            <span>Все поля обязательны для заполнения</span>
+          </div>
+          <fieldset class="payment-tabs">
+            <div class="payment-tabs-item first-item">
+              <div>ВЫБЕРИТЕ СПОСОБ ДОСТАВКИ</div>
+              <select name="delivery" id="delivery">
+                <option value="Курьер" selected = "selected">Доставка курьером</option>
+                <option value="Самовывоз">Самовывоз</option>
+              </select>
+            </div>
+            <div class="payment-tabs-item">
+              <div class="input">
+                <div>ФАМИЛИЯ</div>
+                <input type="text" name="surname" />
+              </div>
+              <div class="input">
+                <div>ИМЯ</div>
+                <input type="text" name="name" />
+              </div>
+            </div>
+            <div class="payment-tabs-item">
+              <div>АДРЕС</div>
+              <input type="text" name="adress" />
+            </div>
+            <div class="payment-tabs-item">
+              <div class="input">
+                <div>ГОРОД</div>
+                <input type="text" name="city" />
+              </div>
+              <div class="input">
+                <div>ИНДЕКС</div>
+                <input type="text" name="index" />
+              </div>
+            </div>
+            <div class="payment-tabs-item">
+              <div class="input">
+                <div>НОМЕР ТЕЛЕФОНА</div>
+                <input type="text" name="telephone" />
+              </div>
+              <div class="input">
+                <div>E-MAIL</div>
+                <input type="text" name="telephone" />
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="methods">
+          <div class="methods-header">
+            <h2>МЕТОДЫ ОПЛАТЫ</h2>
+            <span><i>Все поля обязательны для заполнения</i></span>
+          </div>
+          <table class="total">
+            <tbody>
+              <tr>
+                <td class="total-left">Сумма:</td>
+                <td class="total-right">9000 руб.</td>
+              </tr>
+              <tr>
+                <td class="total-left">Доставка:</td>
+                <td class="total-right">300 руб.</td>
+              </tr>
+              <tr>
+                <td class="total-left">Итого:</td>
+                <td class="total-right highlight">9300 руб.</td>
+              </tr>
+            </tbody>
+          </table>
+          <fieldset class="payment-tabs">
+            <div class="payment-tabs-nav">
+              <div>ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ</div>
+              <div class="switch">
+                <div class="active"><a href="#">ДЛЯ ФИЗИЧЕСКИХ ЛИЦ</a></div>
+                <div class="entity"><a href="#">ДЛЯ ЮРИДИЧЕСКИХ ЛИЦ</a></div>
+              </div>
+            </div>
+            <div class="payment-tabs-nav">
+              <select name="payment" id="payment">
+                <option value="Курьер" selected = "selected">Кредитная карта</option>
+                <option value="Самовывоз">Банковский перевод</option>
+                <option value="Самовывоз">Наличные</option>
+              </select>
+            </div>
+            <div class="payment-tabs-nav faded">
+              <input type="text" placeholder="Наименование юридического лица" name="entity" />
+            </div>
+            <div class="payment-tabs-nav faded">
+              <input type="text" placeholder="ИНН" name="enn" />
+            </div>
+            <div class="payment-tabs-nav">
+              <div class="button-group">
+                <button class="button button-red">ОФОРМИТЬ ЗАКАЗ</button>
+                <button class="button button-blue">ПРОДОЛЖИТЬ ПОКУПКУ</button>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-block">
+      <div class="footer-block-col1">
+        <div class="footer-block-list">
+        <div class="footer-block-header">КАТАЛОГ</div>
+          <ul>
+            <li><a href="#">Елочные шары с ручной росписью (725)</a> </li> 
+            <li><a href="#">Корпоративные сувениры (135) </a></li>
+            <li><a href="#">Формовые игрушки (214)</a> </li>
+            <li><a href="#">Открытки от Деда Мороза (76)</a> </li>
+            <li><a href="#">Искусственные ёлки (225)</a> </li>
+          </ul>
+        </div>
+        <div class="footer-block-list">
+          <ul>
+            <li><a href="#">Символ года (35)</a> </li>
+            <li><a href="#">Украшения из Европы (214)</a> </li>
+            <li><a href="#">Новогодние свечи (76)</a> </li>
+            <li><a href="#">Рождественские подарки (36)</a> </li>
+            <li><a href="#">Наши идеи (9)</a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-block-col2">
+        <div class="footer-block-list">
+        <div class="footer-block-header">МАГАЗИН</div>
+          <ul>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-block-list">
+          <div class="footer-block-header">МЫ В СОЦСЕТЯХ</div>
+          2016 &#169 Все права защищены
+          <div class="footer-social-icons">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-twitter fa-stack-1x"></i>
+            </span>
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-facebook fa-stack-1x"></i>
+            </span>
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-instagram fa-stack-1x"></i>
+            </span>
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-vk fa-stack-1x"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
